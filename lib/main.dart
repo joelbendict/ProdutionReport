@@ -45,7 +45,7 @@ class MyApp extends StatelessWidget {
                   Container(
                     decoration: BoxDecoration(
                       border: Border(
-                        bottom: BorderSide(color: Colors.grey),
+                        bottom: BorderSide(color: Colors.black),
                       ),
                     ),
                     child: ListTile(
@@ -56,7 +56,7 @@ class MyApp extends StatelessWidget {
                   Container(
                     decoration: BoxDecoration(
                       border: Border(
-                        bottom: BorderSide(color: Colors.grey),
+                        bottom: BorderSide(color: Colors.black),
                       ),
                     ),
                     child: ListTile(
@@ -67,7 +67,7 @@ class MyApp extends StatelessWidget {
                   Container(
                     decoration: BoxDecoration(
                       border: Border(
-                        bottom: BorderSide(color: Colors.grey),
+                        bottom: BorderSide(color: Colors.black),
                       ),
                     ),
                     child: ListTile(
@@ -78,7 +78,7 @@ class MyApp extends StatelessWidget {
                   Container(
                     decoration: BoxDecoration(
                       border: Border(
-                        bottom: BorderSide(color: Colors.grey),
+                        bottom: BorderSide(color: Colors.black),
                       ),
                     ),
                     child: ListTile(
@@ -89,7 +89,7 @@ class MyApp extends StatelessWidget {
                   Container(
                     decoration: BoxDecoration(
                       border: Border(
-                        bottom: BorderSide(color: Colors.grey),
+                        bottom: BorderSide(color: Colors.black),
                       ),
                     ),
                     child: ListTile(
@@ -100,7 +100,7 @@ class MyApp extends StatelessWidget {
                   Container(
                     decoration: BoxDecoration(
                       border: Border(
-                        bottom: BorderSide(color: Colors.grey),
+                        bottom: BorderSide(color: Colors.black),
                       ),
                     ),
                     child: ListTile(
