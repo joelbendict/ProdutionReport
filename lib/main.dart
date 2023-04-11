@@ -16,8 +16,8 @@ class MyApp extends StatelessWidget {
               title: Text('Production Report'),
             ),
             drawer: AnimatedContainer(
-              duration: Duration(seconds: 20),
-              width: 200,
+              duration: Duration(microseconds: 100),
+              width: 270,
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
@@ -43,14 +43,30 @@ class MyApp extends StatelessWidget {
                     ),
                   ),
                   ListTile(
-                    title: Text('Maintenance Work Orders'),
+                    title: Text('Dash Board'),
                     onTap: () {},
                   ),
                   ListTile(
-                    title: Text('Other Utilities'),
+                    title: Text('Analytics'),
                     onTap: () {
                       // Handle option 2 press
                     },
+                  ),
+                  ListTile(
+                    title: Text('P.P'),
+                    onTap: () {},
+                  ),
+                  ListTile(
+                    title: Text('Alerts'),
+                    onTap: () {},
+                  ),
+                  ListTile(
+                    title: Text('MTD Performance'),
+                    onTap: () {},
+                  ),
+                  ListTile(
+                    title: Text('Chart'),
+                    onTap: () {},
                   ),
                 ],
               ),
