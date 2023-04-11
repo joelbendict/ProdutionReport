@@ -42,31 +42,71 @@ class MyApp extends StatelessWidget {
                       color: Colors.blue,
                     ),
                   ),
-                  ListTile(
-                    title: Text('Dash Board'),
-                    onTap: () {},
+                  Container(
+                    decoration: BoxDecoration(
+                      border: Border(
+                        bottom: BorderSide(color: Colors.grey),
+                      ),
+                    ),
+                    child: ListTile(
+                      title: Text('Dash Board'),
+                      onTap: () {},
+                    ),
                   ),
-                  ListTile(
-                    title: Text('Analytics'),
-                    onTap: () {
-                      // Handle option 2 press
-                    },
+                  Container(
+                    decoration: BoxDecoration(
+                      border: Border(
+                        bottom: BorderSide(color: Colors.grey),
+                      ),
+                    ),
+                    child: ListTile(
+                      title: Text('Analytics'),
+                      onTap: () {},
+                    ),
                   ),
-                  ListTile(
-                    title: Text('P.P'),
-                    onTap: () {},
+                  Container(
+                    decoration: BoxDecoration(
+                      border: Border(
+                        bottom: BorderSide(color: Colors.grey),
+                      ),
+                    ),
+                    child: ListTile(
+                      title: Text('Production Plan'),
+                      onTap: () {},
+                    ),
                   ),
-                  ListTile(
-                    title: Text('Alerts'),
-                    onTap: () {},
+                  Container(
+                    decoration: BoxDecoration(
+                      border: Border(
+                        bottom: BorderSide(color: Colors.grey),
+                      ),
+                    ),
+                    child: ListTile(
+                      title: Text('Alerts'),
+                      onTap: () {},
+                    ),
                   ),
-                  ListTile(
-                    title: Text('MTD Performance'),
-                    onTap: () {},
+                  Container(
+                    decoration: BoxDecoration(
+                      border: Border(
+                        bottom: BorderSide(color: Colors.grey),
+                      ),
+                    ),
+                    child: ListTile(
+                      title: Text('MTD Performance'),
+                      onTap: () {},
+                    ),
                   ),
-                  ListTile(
-                    title: Text('Chart'),
-                    onTap: () {},
+                  Container(
+                    decoration: BoxDecoration(
+                      border: Border(
+                        bottom: BorderSide(color: Colors.grey),
+                      ),
+                    ),
+                    child: ListTile(
+                      title: Text('Chart'),
+                      onTap: () {},
+                    ),
                   ),
                 ],
               ),
