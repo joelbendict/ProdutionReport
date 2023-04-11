@@ -1,10 +1,35 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_email_sender/flutter_email_sender.dart';
+import 'package:http/http.dart' as http;
+import 'dart:convert';
 
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+
+  String _output = '';
+  String _materials = '';
+  String _boxWeight = '';
+  String _downtime = '';
+  String _percentageLoss = '';
+  String _casualIndex = '';
+  String _remark = '';
+
+  Future<void> _sendEmail() async {
+    final Email email = Email(
+      body:
+          'Total Output: $_output\nMaterials: $_materials\nBox Weight: $_boxWeight\nDowntime: $_downtime\nPercentage Loss: $_percentageLoss\nCasual index: $_casualIndex\nRemark: $_remark',
+      subject: 'Production Report',
+      recipients: ['joelbendict24@gmail.com'],
+      isHTML: false,
+    );
+
+    await FlutterEmailSender.send(email);
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -208,12 +233,34 @@ class MyApp extends StatelessWidget {
                       SizedBox(height: 50.0),
                       ElevatedButton(
                         onPressed: () {
-                          //onpress
+                          _sendFormData();
                         },
                         child: Text('Submit'),
                       ),
                     ]),
               ),
             )));
+  }
+
+  Future<void> _sendFormData() async {
+    final url = Uri.parse('YOUR_API_URL_HERE');
+    final response = await http.post(
+      url,
+      body: {
+        'total_output': _output.toString(),
+        'materials': _materials.toString(),
+        'box_weight': _boxWeight.toString(),
+        'downtime': _downtime.toString(),
+        'percentage_loss': _percentageLoss.toString(),
+        'casual_index': _casualIndex.toString(),
+        'remark': _remark.toString(),
+      },
+    );
+
+    if (response.statusCode == 200) {
+      print('Form data sent successfully!');
+    } else {
+      throw Exception('Failed to send form data!');
+    }
   }
 }
