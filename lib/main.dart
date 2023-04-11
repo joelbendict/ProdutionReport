@@ -49,6 +49,7 @@ class MyApp extends StatelessWidget {
                       ),
                     ),
                     child: ListTile(
+                      leading: Icon(Icons.dashboard),
                       title: Text('Dash Board'),
                       onTap: () {},
                     ),
@@ -60,6 +61,7 @@ class MyApp extends StatelessWidget {
                       ),
                     ),
                     child: ListTile(
+                      leading: Icon(Icons.analytics),
                       title: Text('Analytics'),
                       onTap: () {},
                     ),
@@ -71,6 +73,7 @@ class MyApp extends StatelessWidget {
                       ),
                     ),
                     child: ListTile(
+                      leading: Icon(Icons.production_quantity_limits),
                       title: Text('Production Plan'),
                       onTap: () {},
                     ),
@@ -82,6 +85,7 @@ class MyApp extends StatelessWidget {
                       ),
                     ),
                     child: ListTile(
+                      leading: Icon(Icons.warning),
                       title: Text('Alerts'),
                       onTap: () {},
                     ),
@@ -93,6 +97,7 @@ class MyApp extends StatelessWidget {
                       ),
                     ),
                     child: ListTile(
+                      leading: Icon(Icons.bar_chart),
                       title: Text('MTD Performance'),
                       onTap: () {},
                     ),
@@ -104,6 +109,7 @@ class MyApp extends StatelessWidget {
                       ),
                     ),
                     child: ListTile(
+                      leading: Icon(Icons.insert_chart),
                       title: Text('Chart'),
                       onTap: () {},
                     ),
