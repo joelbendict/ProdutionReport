@@ -3,6 +3,8 @@ import 'package:flutter_email_sender/flutter_email_sender.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
+import 'dashboard_screen.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -76,7 +78,13 @@ class MyApp extends StatelessWidget {
                     child: ListTile(
                       leading: Icon(Icons.dashboard),
                       title: Text('Dash Board'),
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => DashboardScreen()),
+                        );
+                      },
                     ),
                   ),
                   Container(
