@@ -79,6 +79,7 @@ class MyApp extends StatelessWidget {
                       leading: Icon(Icons.dashboard),
                       title: Text('Dash Board'),
                       onTap: () {
+                        print('Dashboard tapped');
                         Navigator.push(
                           context,
                           MaterialPageRoute(
