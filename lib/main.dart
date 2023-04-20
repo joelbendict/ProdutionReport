@@ -42,40 +42,8 @@ class MyApp extends StatelessWidget {
             appBar: AppBar(
               title: Text('Production Report'),
             ),
-            drawer: AnimatedContainer(
-              duration: Duration(microseconds: 100),
-              width: 270,
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.only(
-                  topRight: Radius.circular(10),
-                  bottomRight: Radius.circular(10),
-                ),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.3),
-                    spreadRadius: 2,
-                    blurRadius: 5,
-                    offset: Offset(0, 3),
-                  ),
-                ],
-              ),
-              child: ListView(
-                padding: EdgeInsets.zero,
-                children: [
-                  DrawerHeader(
-                    child: Text('PaperToils(U)Ltd.'),
-                    decoration: BoxDecoration(
-                      color: Colors.blue,
-                    ),
-                  ),
-                  Container(
-                    decoration: BoxDecoration(
-                      border: Border(
-                        bottom: BorderSide(color: Colors.black),
-                      ),
-                    ),
-                    child: ListTile(
+            drawer: 
+            child: ListTile(
                       leading: Icon(Icons.dashboard),
                       title: Text('Dash Board'),
                       onTap: () {
