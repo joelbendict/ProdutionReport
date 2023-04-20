@@ -3,6 +3,8 @@ import 'package:flutter_email_sender/flutter_email_sender.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
+import 'dashboard_screen.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -67,78 +69,91 @@ class MyApp extends StatelessWidget {
                       color: Colors.blue,
                     ),
                   ),
-                  Container(
-                    decoration: BoxDecoration(
-                      border: Border(
-                        bottom: BorderSide(color: Colors.black),
-                      ),
-                    ),
-                    child: ListTile(
-                      leading: Icon(Icons.dashboard),
-                      title: Text('Dash Board'),
-                      onTap: () {},
-                    ),
+                  // Container(
+                  //   decoration: BoxDecoration(
+                  //     border: Border(
+                  //       bottom: BorderSide(color: Colors.black),
+                  //     ),
+                  //   ),
+                  // child:
+                  ListTile(
+                    leading: Icon(Icons.dashboard),
+                    title: Text('Dash Board'),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => DashboardScreen(),
+                        ),
+                      );
+                    },
                   ),
-                  Container(
-                    decoration: BoxDecoration(
-                      border: Border(
-                        bottom: BorderSide(color: Colors.black),
-                      ),
-                    ),
-                    child: ListTile(
-                      leading: Icon(Icons.analytics),
-                      title: Text('Analytics'),
-                      onTap: () {},
-                    ),
+                  //),
+                  // Container(
+                  //   decoration: BoxDecoration(
+                  //     border: Border(
+                  //       bottom: BorderSide(color: Colors.black),
+                  //     ),
+                  //   ),
+                  // child:
+                  ListTile(
+                    leading: Icon(Icons.analytics),
+                    title: Text('Analytics'),
+                    onTap: () {},
                   ),
-                  Container(
-                    decoration: BoxDecoration(
-                      border: Border(
-                        bottom: BorderSide(color: Colors.black),
-                      ),
-                    ),
-                    child: ListTile(
-                      leading: Icon(Icons.production_quantity_limits),
-                      title: Text('Production Plan'),
-                      onTap: () {},
-                    ),
+                  // ),
+                  // Container(
+                  //   decoration: BoxDecoration(
+                  //     border: Border(
+                  //       bottom: BorderSide(color: Colors.black),
+                  //     ),
+                  //   ),
+                  // child:
+                  ListTile(
+                    leading: Icon(Icons.production_quantity_limits),
+                    title: Text('Production Plan'),
+                    onTap: () {},
                   ),
-                  Container(
-                    decoration: BoxDecoration(
-                      border: Border(
-                        bottom: BorderSide(color: Colors.black),
-                      ),
-                    ),
-                    child: ListTile(
-                      leading: Icon(Icons.warning),
-                      title: Text('Alerts'),
-                      onTap: () {},
-                    ),
+                  // ),
+                  // Container(
+                  //   decoration: BoxDecoration(
+                  //     border: Border(
+                  //       bottom: BorderSide(color: Colors.black),
+                  //     ),
+                  //   ),
+                  // child:
+                  ListTile(
+                    leading: Icon(Icons.warning),
+                    title: Text('Alerts'),
+                    onTap: () {},
                   ),
-                  Container(
-                    decoration: BoxDecoration(
-                      border: Border(
-                        bottom: BorderSide(color: Colors.black),
-                      ),
-                    ),
-                    child: ListTile(
-                      leading: Icon(Icons.bar_chart),
-                      title: Text('MTD Performance'),
-                      onTap: () {},
-                    ),
+                  // ),
+                  // Container(
+                  //   decoration: BoxDecoration(
+                  //     border: Border(
+                  //       bottom: BorderSide(color: Colors.black),
+                  //     ),
+                  //   ),
+                  // child:
+                  ListTile(
+                    leading: Icon(Icons.bar_chart),
+                    title: Text('MTD Performance'),
+                    onTap: () {},
                   ),
-                  Container(
-                    decoration: BoxDecoration(
-                      border: Border(
-                        bottom: BorderSide(color: Colors.black),
-                      ),
-                    ),
-                    child: ListTile(
-                      leading: Icon(Icons.insert_chart),
-                      title: Text('Chart'),
-                      onTap: () {},
-                    ),
+                  // ),
+                  // Container(
+                  //   decoration: BoxDecoration(
+                  //     border: Border(
+                  //       bottom: BorderSide(color: Colors.black),
+                  //     ),
+                  //   ),
+                  // child:
+                  ListTile(
+                    leading: Icon(Icons.insert_chart),
+                    title: Text('Chart'),
+                    onTap: () {},
                   ),
+                  // ),
                 ],
               ),
             ),
