@@ -75,10 +75,7 @@ class MyApp extends StatelessWidget {
                   //       bottom: BorderSide(color: Colors.black),
                   //     ),
                   //   ),
-                  // child:
-                  ListTile(
-                    leading: Icon(Icons.dashboard),
-                    title: Text('Dash Board'),
+                  GestureDetector(
                     onTap: () {
                       Navigator.push(
                         context,
@@ -87,6 +84,10 @@ class MyApp extends StatelessWidget {
                         ),
                       );
                     },
+                    child: ListTile(
+                      leading: Icon(Icons.dashboard),
+                      title: const Text('Dash Board'),
+                    ),
                   ),
                   //),
                   // Container(
@@ -95,11 +96,12 @@ class MyApp extends StatelessWidget {
                   //       bottom: BorderSide(color: Colors.black),
                   //     ),
                   //   ),
-                  // child:
-                  ListTile(
-                    leading: Icon(Icons.analytics),
-                    title: Text('Analytics'),
+                  GestureDetector(
                     onTap: () {},
+                    child: ListTile(
+                      leading: Icon(Icons.analytics),
+                      title: Text('Analytics'),
+                    ),
                   ),
                   // ),
                   // Container(
@@ -108,11 +110,12 @@ class MyApp extends StatelessWidget {
                   //       bottom: BorderSide(color: Colors.black),
                   //     ),
                   //   ),
-                  // child:
-                  ListTile(
-                    leading: Icon(Icons.production_quantity_limits),
-                    title: Text('Production Plan'),
+                  GestureDetector(
                     onTap: () {},
+                    child: ListTile(
+                      leading: Icon(Icons.production_quantity_limits),
+                      title: Text('Production Plan'),
+                    ),
                   ),
                   // ),
                   // Container(
@@ -121,11 +124,12 @@ class MyApp extends StatelessWidget {
                   //       bottom: BorderSide(color: Colors.black),
                   //     ),
                   //   ),
-                  // child:
-                  ListTile(
-                    leading: Icon(Icons.warning),
-                    title: Text('Alerts'),
+                  GestureDetector(
                     onTap: () {},
+                    child: ListTile(
+                      leading: Icon(Icons.warning),
+                      title: Text('Alerts'),
+                    ),
                   ),
                   // ),
                   // Container(
@@ -134,11 +138,12 @@ class MyApp extends StatelessWidget {
                   //       bottom: BorderSide(color: Colors.black),
                   //     ),
                   //   ),
-                  // child:
-                  ListTile(
-                    leading: Icon(Icons.bar_chart),
-                    title: Text('MTD Performance'),
+                  GestureDetector(
                     onTap: () {},
+                    child: ListTile(
+                      leading: Icon(Icons.bar_chart),
+                      title: Text('MTD Performance'),
+                    ),
                   ),
                   // ),
                   // Container(
@@ -147,12 +152,14 @@ class MyApp extends StatelessWidget {
                   //       bottom: BorderSide(color: Colors.black),
                   //     ),
                   //   ),
-                  // child:
-                  ListTile(
-                    leading: Icon(Icons.insert_chart),
-                    title: Text('Chart'),
+                  GestureDetector(
                     onTap: () {},
-                  ),
+                    child: ListTile(
+                      leading: Icon(Icons.insert_chart),
+                      title: Text('Chart'),
+                    ),
+                  )
+
                   // ),
                 ],
               ),
